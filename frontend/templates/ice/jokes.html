@@ -1,0 +1,8 @@
+<h1>Jokes</h1>
+
+{% for joke in jokes %}
+    <tr><a href="{{ joke.url }}">{{ joke.url }}</a></tr><br/>
+    <tr>Rating: {{ joke.rating }}</tr><br/>
+    <tr>{{ joke.text }}</tr><br/>
+    <br/>
+{% endfor %}
